@@ -1,7 +1,7 @@
 [
   {
     "ContainingType": "MagicVilla_API.Controllers.VillaController",
-    "Method": "GetVillas",
+    "Method": "GetVillasAsync",
     "RelativePath": "api/Villa",
     "HttpMethod": "GET",
     "IsController": true,
@@ -28,8 +28,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "villaDto",
-        "Type": "MagicVilla_API.Modelos.Dto.VillaDto",
+        "Name": "createDto",
+        "Type": "MagicVilla_API.Modelos.Dto.VillaCreateDto",
         "IsRequired": true
       }
     ],
@@ -51,11 +51,6 @@
           "text/json"
         ],
         "StatusCode": 400
-      },
-      {
-        "Type": "System.Void",
-        "MediaTypes": [],
-        "StatusCode": 500
       }
     ]
   },
@@ -158,8 +153,8 @@
         "IsRequired": false
       },
       {
-        "Name": "villaDto",
-        "Type": "MagicVilla_API.Modelos.Dto.VillaDto",
+        "Name": "updateDto",
+        "Type": "MagicVilla_API.Modelos.Dto.VillaUpdateDto",
         "IsRequired": true
       }
     ],
