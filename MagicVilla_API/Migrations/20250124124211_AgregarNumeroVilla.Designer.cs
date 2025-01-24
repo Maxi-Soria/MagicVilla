@@ -4,6 +4,7 @@ using MagicVilla_API.Datos;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace MagicVilla_API.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250124124211_AgregarNumeroVilla")]
+    partial class AgregarNumeroVilla
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -91,8 +94,8 @@ namespace MagicVilla_API.Migrations
                             Id = 1,
                             Amenidad = "",
                             Detalle = "Detalle de la Villa...",
-                            FechaActualizacion = new DateTime(2025, 1, 24, 11, 19, 52, 806, DateTimeKind.Local).AddTicks(6361),
-                            FechaCreacion = new DateTime(2025, 1, 24, 11, 19, 52, 806, DateTimeKind.Local).AddTicks(6348),
+                            FechaActualizacion = new DateTime(2025, 1, 24, 9, 42, 10, 478, DateTimeKind.Local).AddTicks(1436),
+                            FechaCreacion = new DateTime(2025, 1, 24, 9, 42, 10, 478, DateTimeKind.Local).AddTicks(1427),
                             ImagenUrl = "",
                             MetrosCuadrados = 50,
                             Nombre = "Villa Real",
@@ -104,8 +107,8 @@ namespace MagicVilla_API.Migrations
                             Id = 2,
                             Amenidad = "",
                             Detalle = "Detalle de la villa 2",
-                            FechaActualizacion = new DateTime(2025, 1, 24, 11, 19, 52, 806, DateTimeKind.Local).AddTicks(6365),
-                            FechaCreacion = new DateTime(2025, 1, 24, 11, 19, 52, 806, DateTimeKind.Local).AddTicks(6364),
+                            FechaActualizacion = new DateTime(2025, 1, 24, 9, 42, 10, 478, DateTimeKind.Local).AddTicks(1439),
+                            FechaCreacion = new DateTime(2025, 1, 24, 9, 42, 10, 478, DateTimeKind.Local).AddTicks(1439),
                             ImagenUrl = "",
                             MetrosCuadrados = 40,
                             Nombre = "Premium vista a la piscina",
